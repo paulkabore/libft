@@ -1,34 +1,27 @@
+#include <stdlib.h>
 #include "../libft.h"
 
-static size_t	ft_strlen(const char *s)
+static inline size_t	ft_getlen(const char *s)
 {
-         size_t  i;
+         size_t i = 0;
 
-         if (!s)
-                 return 0;
-         i = 0;
-         while (*(s + i) && ++i)
-                 ;
+         while (*(s + i) && ++i);
          return i;
 }
 
-char		ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	char *copy;
-	size_t length;
-	size_t i;
+	char *cpy = NULL;
+	size_t length = ft_getlen(s);
+	size_t i = 0;
 
-	i = 0;
-	copy = NULL;
-	length = ft_strlen(s);
-
-	copy = (char *)malloc(length * sizeof(char));
-	if (!copy)
-		return NULL;
+	cpy = (char *)malloc(length * sizeof(char));
+	if (!cpy)
+		return cpy;
 	while (i < length)
 	{
-		*(copy + i) = *(s + i);
+		*(cpy + i) = *(s + i);
 		++i;
 	}
-	return copy;
+	return cpy;
 }

@@ -2,17 +2,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	size_t		i;
+	//char *addr = NULL;
+	size_t i = 0;
 
-	if (!s)
-		return NULL;
-	i = 0;
 	while(*(s + i))
 	{
 		if (*(s + i) == c)
-			return s + i;
+			return (char *)s + i;
+		++i;
 	}
 	if (*(s + i) == c)
-		return s + i;
-	return NULL;
+		return (char *)s + i;
+	return (char *)NULL;
 }
