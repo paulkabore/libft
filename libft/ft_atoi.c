@@ -21,5 +21,5 @@ int	ft_atoi(const char *nptr)
 		res = res * 10 + *(nptr + start) - 48;
 		++start;
 	}
-	return int(sng * res);
+	return (int)(sgn * res);
 }
