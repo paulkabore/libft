@@ -3,12 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-const int main(const int argc, const char **argv)
+#define STR_SIZE 40
+int main(const int argc, const char **argv)
 {
 int i = 1;
+char dst[STR_SIZE];
+char dst1[STR_SIZE];
 
-char dst[40];
-char dst1[40];
 strcpy(dst, "Hello!");
 strcpy(dst1, "Hello!");
 dst[6] = '\0';
