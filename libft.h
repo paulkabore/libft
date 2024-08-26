@@ -4,6 +4,11 @@
 #include <unistd.h>
 #include <locale.h>
 
+typedef	enum bool {
+	false,
+	true
+} bool;
+
 void	ft_bzero(void *s, unsigned long n);
 
 char	*ft_strchr(const char *s, int c);
@@ -13,6 +18,7 @@ size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
+char    *ft_strcat(char *dest, const char *src);
 
 char	**ft_split(const char *s, int c);
 void	*ft_memset(void *s, int c, size_t n);
