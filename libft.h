@@ -29,6 +29,8 @@ void	*ft_memchr(void *s, int c, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int     ft_atoi(const char *nptr);
+long double ft_abs(long double x);
+long double ft_sqrt(long double x);
 
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);

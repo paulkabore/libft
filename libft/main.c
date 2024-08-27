@@ -1,20 +1,15 @@
 #include "../libft.h"
 #include <stdio.h>
+#include <math.h>
 
 int main(const int argc, const char **argv)
 {
-	int i = 0;
-	char **arr;
-	
-	i = argc - argc;
-	
-	if (argc < 3) return -1;
-	arr = ft_split(argv[1], argv[2][0]);
-	while(*arr)
-	{
-		printf("%s\n", *arr);
-		++arr;
-	}
 
+	long double i = 0;
+	while (i < 101)
+	{
+		printf("%.30Lf\t%.30f\n", ft_sqrt(i), sqrt(i));
+		++i;
+	}
 	return 0;
 }
