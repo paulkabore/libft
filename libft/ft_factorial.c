@@ -1,8 +1,8 @@
 #include "../libft.h"
 
-unsigned long int ft_factorial(unsigned int n)
+unsigned long long int ft_factorial(uint8_t n)
 {
-	unsigned int i = 1;
+	uint8_t i = 1;
 	unsigned long int r = 1;
 
 	if (n == 0 || n == 1)

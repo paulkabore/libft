@@ -29,9 +29,11 @@ void	*ft_memchr(void *s, int c, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int     ft_atoi(const char *nptr);
-unsigned long int ft_factorial(unsigned int n);
+unsigned long long int ft_factorial(uint8_t n);
 long double ft_abs(long double x);
 long double ft_sqrt(long double x);
+long double ft_sqrt2(long double x);
+long double ft_power(long double x, unsigned int n);
 
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);
